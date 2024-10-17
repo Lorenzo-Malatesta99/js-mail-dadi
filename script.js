@@ -22,3 +22,23 @@ if (inLista === true) {
 } else {
     console.log("La tua mail non è presente nella inLista, mi dispiace!")
 }
+
+
+// Gioco dei dadi
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+let tiroGiocatore1 = Math.floor(Math.random() * 6) + 1;
+console.log("Il giocatore 1 ha fatto ==> " + tiroGiocatore1);
+
+let tiroGiocatore2 = Math.floor(Math.random() * 6) + 1;
+console.log("Il giocatore 2 ha fatto ==> " + tiroGiocatore2);
+
+if (tiroGiocatore1 > tiroGiocatore2) {
+    console.log("Complimenti Giocatore 1 hai vinto!")
+} else if (tiroGiocatore1 < tiroGiocatore2) {
+    console.log("Complimenti Giocatore 2 hai vinto!");
+} else {
+    console.log("È un pareggio!");
+}
+
